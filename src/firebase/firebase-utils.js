@@ -75,7 +75,7 @@ export const resetPassword = (email) =>
   sendPasswordResetEmail(auth, email, actionCodeSettingsForgotPassword).then(
     () => alert(`Mail de recupero de contraseña enviado a ${email}`)
   );
-export const createOrderDocument = async (order) => {
+export const createOrderDocument = async order => {
   if (!order) return;
   const orderRef = doc(firestore, `orders/${order.orderId}`);
   const snapShot = await getDoc(orderRef);
