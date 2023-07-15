@@ -186,12 +186,14 @@ export const TextStyled = styled.p`
   margin: 0;
   color: #87a186;
   font-size: 1rem;
+ 
   
 `;
 
 export const PriceStyled = styled.span`
   font-weight: 800;
   font-size: 1.2rem;
+  text-align:center;
   @media (min-width: 280px) and (max-width: 480px) {
    text-align: center;
    font-size: 1rem;
