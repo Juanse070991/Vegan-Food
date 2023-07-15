@@ -27,6 +27,10 @@ export const CardContainerStyled = styled.div`
     align-items: center;
     width: 80%;
   }
+
+  @media (min-width: 280px) and (max-width: 480px) {
+   flex-direction: column;
+   }
 `;
 
 export const CardInfoStyled = styled.div`
@@ -34,6 +38,10 @@ export const CardInfoStyled = styled.div`
   flex-direction: column;
   gap: 5px;
   width: 240px;
+  @media (min-width: 280px) and (max-width: 480px) {
+    text-align: center;
+    font-size: 1rem;
+   }
 `;
 
 export const ProductTitleStyled = styled.h3`

@@ -8,6 +8,8 @@ export const MisOrdenesWrapper = styled.div`
 
   gap: 1rem;
   flex-wrap: wrap;
+
+ 
 `;
 
 export const OrderCard = styled.div`
@@ -17,6 +19,8 @@ export const OrderCard = styled.div`
   border-radius: 0.4rem;
   text-align: center;
   box-shadow: 2px 4px 8px 2px var(--negroheader);
+
+ 
 `;
 
 export const OrderInfoContainer = styled.div``;
@@ -37,6 +41,10 @@ export const MisOrdenesContainer = styled.div`
   height: 100vh;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
+  @media (min-width: 280px) and (max-width: 480px) {
+    margin-bottom: 0rem;
+    }
 `;
 
 export const MisOrdenesTitle = styled.h2``;
@@ -46,4 +54,7 @@ export const MisOrdenesBtnContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 624px) {
+   
+  }
 `;

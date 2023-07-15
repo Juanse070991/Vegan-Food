@@ -114,6 +114,12 @@ export const ProductsWrapperStyled = styled.div`
   @media (max-height: 800px) {
     height: 300px;
   }
+  @media (min-width: 280px) and (max-width: 480px) {
+    width:100%;
+    max-width: 100%;
+    
+  }
+   
 `;
 
 export const ProductContainerStyled = styled.div`
@@ -133,7 +139,7 @@ export const ProductContainerStyled = styled.div`
     object-fit: cover;
   }
   @media only screen and (max-width: 624px) {
-    width:90%;
+    
 
     /* font-size: 1rem; */
     & img {
@@ -143,6 +149,10 @@ export const ProductContainerStyled = styled.div`
       object-fit: cover;
     }
   }
+  @media (min-width: 280px) and (max-width: 480px) {
+    flex-direction: column;
+    
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -150,6 +160,11 @@ export const TextContainerStyled = styled.div`
   flex-direction: column;
   gap: 5px;
   width: 190px;
+  @media (min-width: 280px) and (max-width: 480px) {
+    align-item: center; 
+    padding-left: 20px;
+   
+  }
 `;
 
 export const CardTitleStyled = styled.h3`
@@ -159,6 +174,11 @@ export const CardTitleStyled = styled.h3`
   @media only screen and (max-width: 624px) {
     font-size: 1rem;
     text-align: center;
+    @media (min-width: 280px) and (max-width: 480px) {
+      align-item: center;
+      height:auto;
+     
+    }
   }
 `;
 
@@ -166,11 +186,16 @@ export const TextStyled = styled.p`
   margin: 0;
   color: #87a186;
   font-size: 1rem;
+  
 `;
 
 export const PriceStyled = styled.span`
   font-weight: 800;
   font-size: 1.2rem;
+  @media (min-width: 280px) and (max-width: 480px) {
+   text-align: center;
+   font-size: 1rem;
+  }
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -186,9 +211,12 @@ export const SubtotalStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
 `;
 
-export const EnvioStyled = styled(SubtotalStyled)``;
+export const EnvioStyled = styled(SubtotalStyled)`
+`;
 
 export const TotalStyled = styled(SubtotalStyled)``;
 
@@ -196,11 +224,19 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
   justify-content: center;
   align-items: center;
   width: 100%;
+  
+  @media (min-width: 280px) and (max-width: 480px) {
+   margin-bottom: 3.2rem;
+   }
 `;
 
 export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
+  @media (min-width: 280px) and (max-width: 480px) {
+    margin-left: 1.1rem ;
+    }
+  
 `;
 
 export const ModalOverlayStyled = styled(motion.div)`
@@ -216,4 +252,6 @@ export const ModalOverlayStyled = styled(motion.div)`
     css`
       backdrop-filter: blur(4px);
     `}
+
+   
 `;
